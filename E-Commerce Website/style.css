@@ -7,6 +7,7 @@
 
 #header{
     display: flex;
+    height: 13vh;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
@@ -41,7 +42,7 @@
 
 #header-list-nav>ul>li{
     margin: 15px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 550;
     position: relative;
 }
@@ -63,8 +64,8 @@
 
 .header-list-icon>a>i{
     color:black;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 16px;
+    /* margin-bottom: 2px; */
     margin-left: 10px;
 }
 
@@ -117,19 +118,78 @@
 #hero>p{
     color:#465b52;
     font-size: 16px;
+    margin-left: 2px;
 }
 
 #hero>button{
-    margin-top: 20px;
     background-image: url("images/button.png");
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 50px;
-    padding-right: 20px;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
     border:none;
+    margin-top: 30px;
+    width:300px;
+    height:70px;
     color:#088178;
     font-size: 16px;
-    font-weight: 600;
-    margin-left: 20px;
+    font-weight: 550;
+    z-index: 20;
+}
+
+#features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#features>.fbox{
+    margin: 10px;
+    width: 200px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    border:1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    transition: box-shadow 0.3s;
+}
+
+#features>.fbox:hover{
+    box-shadow: 10px 10px 50px rgba(0,0,0,0.15)
+}
+
+#features>.fbox>img{
+    width:168px;
+    height:auto;
+}
+
+#features>.fbox>h4{
+    font-weight: bolder;
+    margin-top: 20px;
+    color:#088178;
+    padding:10px;
+    border-radius: 13px;
+    font-size: 12px;
+}
+
+#feature1{
+    background-color: #fddde4;
+}
+#feature2{
+    background-color: #cdebbc;
+}
+#feature3{
+    background-color: #d1e8f2;
+}
+#feature4{
+    background-color: #cdd4f8;
+}
+#feature5{
+    background-color: #f6dbf6;
+}
+#feature6{
+    background-color: #fff2e5;
 }
